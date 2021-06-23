@@ -1,0 +1,129 @@
+@font-face{
+    font-family:'iransans';
+    src:url('../fonts/IRANSansWeb.ttf') format('truetype'), 
+        url('f../onts/IRANSansWeb.woff') format('woff');
+}
+body {
+    font-family: 'iransans' !important;
+    direction: rtl;
+}
+ul , p{
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: #fff;
+}
+/* utilities */
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+/* header */
+.header {
+    background-color: #e58e26;
+}
+.title {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.cart-btn-container {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #c0392b;
+}
+.product-count  {
+    background-color: #c0392b;
+    color: #fff;
+    border-radius: 50%;
+    padding:0 .5rem;
+}
+/* Cart */
+.cart-container {
+    width: 320px;
+    float: left;
+    
+    background-color: #fad390;
+    margin-left: 0;
+}
+.cart-container .items {
+    width: 100%;
+}
+.items i {
+    color: #e55039;
+}
+.items .item-cart i:hover {
+    cursor: pointer;
+}
+.img-container{
+    width: 45px;
+    height: 45px;
+    
+}
+.img-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+.item-price {
+    font-size: .875rem;
+    color: rgb(112, 112, 112);
+}
+.item-info {
+    justify-content: right;
+}
+.divider {
+    height: 1px;
+    background-color: #e58e26;
+    opacity: 0.3;
+}
+.cart-btns {
+    gap: 20px;
+}
+.cart-btns .checkout-btn {
+    background-color: #e55039;
+    color: #fff;
+    border-radius: 5px;
+}
+.cart-btns .checkout-btn:hover {
+    background-color: #c0392b;
+}
+.cart-btns .clear-btn {
+    border:1px solid #c0392b;
+    border-radius: 5px;
+    color: #c0392b;
+}
+.cart-btns .clear-btn:hover {
+    color: #c0392b;
+    border:1px solid #c0392b;
+}
+#cart {
+    transition: all 0.3s ease-in-out;
+}
+#cart-btn:hover {
+    cursor: pointer;
+}
+
+/* products */
+.products-container {
+    
+}
+.product {
+    width: 30%;
+    background-color: #f7d794;
+    border: 1px solid #f5cd79;
+    border-radius: 8px;
+}
+.product i {
+    color:#e58e26;
+}
+.product i:hover {
+    cursor: pointer;
+}

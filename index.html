@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>کارت خرید</title>
+</head>
+<body>
+    <header class="header py-3">
+        <div class="container d-flex flex-row justify-content-between align-items-center">
+            <div class="right-header d-flex flex-row align-items-center">
+                <h1 class="title">فروشگاه غذایی</h1>
+                <nav class="d-flex align-items-center justify-content-center">
+                    <ul class="d-flex flex-row align-items-center ">
+                        <li class="px-3"><a href="#">صفحه اصلی</a></li>
+                        <li class="px-3"><a href="#">درباره ما</a></li>
+                        <li class="px-3"><a href="#">محصولات</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="left-header">
+                <div id="cart-btn" class="cart-btn-container d-flex flex-row align-items-center p-2">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="price-container d-flex flex-row align-items-center px-2">
+                        <p id="total-price-btn" class="total-price">
+                            0
+                        </p>
+                        <p class="currency px-1">
+                            تومان
+                        </p>
+                    </div>
+                    <p id="count" class="product-count ">
+                        0
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </header>
+    <div class="cart-container hide" id="cart">
+        <p class="cart-title p-3">
+            سبد خرید شما
+        </p>
+        <div class="divider mx-3"></div> 
+        <div class="items d-flex flex-column">
+                <!-- chosen products will be here! -->
+        </div>    
+        <div class="divider mx-3"></div> 
+        <div class="all-price-container d-flex flex-row justify-content-between py-3 px-4">
+            <p>
+                مجموع
+            </p>
+            <div class="all-price d-flex flex-row">
+                <p id="total-price" class="all-price-amount">
+                    0
+                </p>
+                <p class="all-price-currency px-1">
+                    تومان
+                </p>
+            </div>
+        </div> 
+        <div class="cart-btns d-flex flex-row justify-content-center p-3">
+            <a href="#" class="checkout-btn px-3 py-2">
+                پرداخت
+            </a>
+            <a href="#" id="clearAllBtn" class="clear-btn px-3 py-2">
+                حذف همه
+            </a>
+        </div>
+    </div>
+    <div class="products-container container my-3">
+        <div class="product d-flex flex-row justify-content-between align-items-center p-3 mb-3">
+            <div class="img-name-product d-flex flex-row align-items-center">
+                <div class="img-container">
+                    <img src="images/cake1.jpg" alt="" class="item-img">
+                </div> 
+                <p class="product-title px-2">کیک شکلاتی ساده</p>
+            </div>
+            <div class="price-add-product d-flex flex-row align-items-center justify-content-start">
+                <div class="item-price d-flex flex-row mx-3">
+                    <p class="price-amount">
+                        13500
+                    </p>
+                    <p class="price-currency px-1">
+                        تومان
+                    </p>
+                </div>
+                <i class="fa fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="product d-flex flex-row justify-content-between align-items-center p-3 mb-3">
+            <div class="img-name-product d-flex flex-row align-items-center">
+                <div class="img-container">
+                    <img src="images/cake2.jpg" alt="" class="item-img">
+                </div> 
+                <p class="product-title px-2">کیک نسکافه ای</p>
+            </div>
+            <div class="price-add-product d-flex flex-row align-items-center justify-content-start">
+                <div class="item-price d-flex flex-row mx-3">
+                    <p class="price-amount">
+                        25500
+                    </p>
+                    <p class="price-currency px-1">
+                        تومان
+                    </p>
+                </div>
+                <i class="fa fa-shopping-cart add-to-cart"></i>
+            </div>
+        </div>
+        <div class="product d-flex flex-row justify-content-between align-items-center p-3 mb-3">
+            <div class="img-name-product d-flex flex-row align-items-center">
+                <div class="img-container">
+                    <img src="images/cake3.jpg" alt="" class="item-img">
+                </div> 
+                <p class="product-title px-2">کیک شکلاتی مخصوص</p>
+            </div>
+            <div class="price-add-product d-flex flex-row align-items-center justify-content-start">
+                <div class="item-price d-flex flex-row mx-3">
+                    <p class="price-amount">
+                        32500
+                    </p>
+                    <p class="price-currency px-1">
+                        تومان
+                    </p>
+                </div>
+                <i class="fa fa-shopping-cart add-to-cart"></i>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
